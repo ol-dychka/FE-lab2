@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="maindiv">
+      <!-- NAVBAR -->
+      <div class="flexbetween top-navbar">
+        <div class="logo">
+          <p class="logo-white">Teachinder</p>
+          <p class="logo-pink">Teachinder</p>
+          <p class="logo-black">Teachinder</p>
+        </div>
+        <div class="top-navbar-search">
+          <input
+            type="text"
+            placeholder="Name, note or age to search"
+            class="input-search"
+          />
+          <button class="button-search">Search</button>
+        </div>
+      </div>
+
+      <div class="flexbetween bottom-navbar">
+        <div class="flexbetween">
+          <p class="text-navigation">Teachers</p>
+          <p class="text-navigation">Statistics</p>
+          <p class="text-navigation">Favourites</p>
+          <p class="text-navigation">About</p>
+        </div>
+        <button class="button-navigation">Add teacher</button>
+      </div>
+
+      <!-- TEACHER GRID SETTINGS -->
+      <hr class="divider" />
+
+      <div class="section-container">Top Teachers</div>
+
+      <div class="flexbetween filters">
+        <div class="filter-option">
+          <p>Age</p>
+          <select>
+            <option>18-31</option>
+            <option>32-50</option>
+          </select>
+        </div>
+        <div class="svl"></div>
+
+        <div class="filter-option">
+          <p>Region</p>
+          <select>
+            <option>Europe</option>
+            <option>America</option>
+            <option>Asia</option>
+          </select>
+        </div>
+        <div class="svl"></div>
+
+        <div class="filter-option">
+          <p>Sex</p>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Any</option>
+          </select>
+        </div>
+        <div class="svl"></div>
+
+        <div class="filter-option">
+          <input type="checkbox" />
+          <p>Only with photo</p>
+        </div>
+        <div class="svl"></div>
+
+        <div class="filter-option">
+          <input type="checkbox" />
+          <p>Only favourites</p>
+        </div>
+      </div>
+
+      <!-- TEACHER GRID -->
+      <div class="responsivegrid">
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+            <img alt="star" src="./assets/star.png" class="tmc-star" />
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+            <img alt="star" src="./assets/star.png" class="tmc-star" />
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+            <img alt="star" src="./assets/star.png" class="tmc-star" />
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imageabsent">I.T.</div>
+            <img alt="star" src="./assets/star.png" class="tmc-star" />
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+            <img alt="star" src="./assets/star.png" class="tmc-star" />
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+      </div>
+
+      <!-- STATISTICS TABLE -->
+      <hr class="divider" />
+      <div class="section-container">Statistics</div>
+
+      <table class="statisticstable">
+        <tr>
+          <th>Name</th>
+          <th>Speciality</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Nationality</th>
+        </tr>
+        <tr>
+          <td>Alfred Fumeister</td>
+          <td>Math</td>
+          <td>56</td>
+          <td>Female</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Alfred Fumeister</td>
+          <td>Math</td>
+          <td>56</td>
+          <td>Female</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Alfred Fumeister</td>
+          <td>Math</td>
+          <td>56</td>
+          <td>Female</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Alfred Fumeister</td>
+          <td>Math</td>
+          <td>56</td>
+          <td>Female</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Alfred Fumeister</td>
+          <td>Math</td>
+          <td>56</td>
+          <td>Female</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Alfred Fumeister</td>
+          <td>Math</td>
+          <td>56</td>
+          <td>Female</td>
+          <td>USA</td>
+        </tr>
+      </table>
+
+      <!-- FAVOURITES -->
+      <hr class="divider" />
+      <div class="section-container">Favorites</div>
+
+      <div class="flexbetween favorites">
+        <img alt="arrowleft" src="./assets/arrow.png" class="arrow-left" />
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <div class="teacherminicard">
+          <div class="tmc-imagebg">
+            <div class="tmc-imagecontainer">
+              <img
+                alt="img1"
+                src="./assets/teacher_mock.jpg"
+                class="tmc-image"
+              />
+            </div>
+          </div>
+          <p class="tmc-name">Ihor Tkachuk</p>
+          <p class="tmc-subject">Chemistry</p>
+          <p class="tmc-country">Ukraine</p>
+        </div>
+
+        <img alt="arrowleft" src="./assets/arrow.png" class="arrow-right" />
+      </div>
+
+      <!-- FOOTER -->
+
+      <hr class="divider" />
+      <p class="footer-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
+        sollicitudin dui. Quisque a nisl enim. Sed finibus facilisis imperdiet.
+        Nunc magna nibh, laoreet at hendrerit quis, porta eu elit. Nulla commodo
+        eget nisi et scelerisque.
+        <br />
+        <br />
+        Nullam turpis dui, fermentum in elementum id, varius vitae metus.
+        Praesent eget tristique dui, vel pharetra dui. Aenean consequat, nisi at
+        tempus fringilla, lacus erat facilisis nulla, quis iaculis ligula ex eu
+        libero. Duis sed eros mattis, egestas orci sed, posuere ipsum.
+        <br />
+        <br />
+        Phasellus vitae imperdiet lorem. In elementum sapien sit amet risus
+        vehicula bibendum. Cras egestas eros ut eros porta, mollis lobortis nisi
+        tempus. Donec varius elementum lectus eu mattis. Aliquam non molestie
+        dolor.
+      </p>
+
+      <div class="flexbetween footermenu">
+        <div class="flexbetween">
+          <p class="text-navigation">Teachers</p>
+          <p class="text-navigation">Statistics</p>
+          <p class="text-navigation">Favourites</p>
+          <p class="text-navigation">About</p>
+        </div>
+        <button class="button-navigation">Add teacher</button>
+      </div>
+    </div>
+
+    <!-- ADD TUTOR POP-UP -->
+    <div class="blur-bg" style="display: none">
+      <div class="addtutor">
+        <div class="addtutor-header flexbetween">
+          <p>Add Tutor</p>
+          <img alt="closeicon" src="./assets/close.png" />
+        </div>
+
+        <div style="margin: 0 2rem">
+          <form>
+            <p class="addtutor-text">Name</p>
+            <input
+              type="text"
+              placeholder="Enter Name"
+              class="addtutor-input"
+            />
+
+            <p class="addtutor-text">Speciality</p>
+            <select class="addtutor-select">
+              <option>Mathematics</option>
+              <option>Chemistry</option>
+              <option>Chess</option>
+            </select>
+
+            <div class="flexbetween">
+              <div>
+                <p class="addtutor-text">Country</p>
+                <select class="addtutor-select">
+                  <option>Ukraine</option>
+                  <option>Poland</option>
+                  <option>Austria</option>
+                </select>
+              </div>
+
+              <div>
+                <p class="addtutor-text">City</p>
+                <input type="text" class="addtutor-input" />
+              </div>
+            </div>
+
+            <div class="flexbetween">
+              <div>
+                <p class="addtutor-text">Email</p>
+                <input type="email" class="addtutor-input" />
+              </div>
+
+              <div>
+                <p class="addtutor-text">Phone Number</p>
+                <input
+                  type="text"
+                  class="addtutor-input"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                />
+              </div>
+            </div>
+
+            <div>
+              <p class="addtutor-text">Date of Birth</p>
+              <input type="date" class="addtutor-input" />
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <p class="addtutor-text">Sex</p>
+              <p class="addtutor-text">Male</p>
+              <input type="radio" />
+              <p class="addtutor-text">Female</p>
+              <input type="radio" />
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 1rem;
+              "
+            >
+              <p class="addtutor-text">Background Color</p>
+              <input type="color" />
+            </div>
+
+            <p class="addtutor-text">Notes(optional)</p>
+            <input type="text" class="addtutor-notes" />
+
+            <br />
+            <button class="addtutor-button">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEACHER INFO POP-UP -->
+    <div class="blur-bg" style="display: none">
+      <div class="tutorinfo">
+        <div class="tutorinfo-header flexbetween">
+          <p>Tutor Info</p>
+          <img alt="closeicon" src="./assets/close.png" />
+        </div>
+
+        <div style="margin: 0 2rem">
+          <div
+            style="
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 1rem;
+            "
+          >
+            <img
+              alt="tutorimage"
+              src="./assets/teacher_mock.jpg"
+              class="tutorinfo-img"
+            />
+            <div style="width: 100%">
+              <div class="flexbetween">
+                <p class="tutorinfo-name">Ihor Tkachuk</p>
+                <img
+                  alt="starimg"
+                  src="./assets/star.png"
+                  class="tutorinfo-star"
+                />
+              </div>
+              <p class="tutorinfo-subject">Chemistry</p>
+              <p class="tutorinfo-info">Kyiv, Ukraine</p>
+              <p class="tutorinfo-info">35, Male</p>
+              <p class="tutorinfo-email">ihor_tkachuk@domain.com</p>
+              <p class="tutorinfo-info">+380964993252</p>
+            </div>
+          </div>
+
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
+            sollicitudin dui. Quisque a nisl enim. Sed finibus facilisis
+            imperdiet. Nunc magna nibh, laoreet at hendrerit quis, porta eu
+            elit. Nulla commodo eget nisi et scelerisque.
+          </p>
+
+          <p class="tutorinfo-map">toggle map</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
